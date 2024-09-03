@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+   
+    </div>  
+        <footer class="footer">
+        <p>توسعه دهنده: سعید لطفی پور</p>  
+       <br/>                  
+                     <p>سایت های ارتباط با بنده</p>  
+       <br/>
+      <a href="https://kaladizaj.com/"   >کالا دیزج</a>     
+       <br/>
+      <a href="https://bazardizaj.com/"   >بازار دیزج</a>  
+       <br/>
+      <a href="http://sms.payamdizaj.ir/"   >پیام دیزج</a>
+    </footer>
+    </form>   
+   
+</body>
+</html>

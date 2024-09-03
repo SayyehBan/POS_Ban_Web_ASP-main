@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script language="javascript" type="text/javascript">
+     var redirectTimerId = 0;
+     function closeWindow()
+     {
+         window.opener = top;
+         redirectTimerId = window.setTimeout('redirect()', 2000);
+         window.close();
+     }
+
+     function stopRedirect()
+     {
+         window.clearTimeout(redirectTimerId);
+     }
+
+     function redirect()
+     {
+         window.location = 'Index.aspx';
+     }
+    </script>
+</head>
+<body onload="closeWindow()" onunload="stopRedirect()" style="direction: rtl">
+    <center><h1>لطفاً صبر کنید....</h1></center>
+</body>
+</html>
